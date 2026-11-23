@@ -1,0 +1,48 @@
+
+<div class="container">
+
+  <!-- Store Information -->
+  <header class="store-header">
+    <h1>{{ store.storeName }}</h1>
+    <p>{{ store.storeDescription }}</p>
+    <p>{{ store.storeAddress }}</p>
+    <p>Total Store Products: {{ store.totalProducts }}</p>
+    <p>Store Open: {{ store.isStoreOpen }}</p>
+    <p>Currency: {{ store.currency }}</p>
+  </header>
+
+  <!-- Store Status -->
+  <section class="card status-section">
+    <h2>Store Status</h2>
+    <h3>{{ display }}</h3>
+  </section>
+
+  <!-- Featured Product -->
+  <section class="card">
+    <h2>Featured Product</h2>
+
+    <p><strong>Name:</strong> {{ featuredProduct.name }}</p>
+    <p><strong>Price:</strong> ${{ featuredProduct.price }}</p>
+    <p><strong>Description:</strong> {{ featuredProduct.description }}</p>
+  </section>
+
+  <!-- Discount Information -->
+  <section class="card">
+    <h2>Product Price Information</h2>
+
+    <p>Original Price: ${{ featuredProduct.price }}</p>
+    <p>Discount: {{ discountPercentage }}%</p>
+    <p class="final-price">Final Price: ${{ finalPrice }}</p>
+  </section>
+
+  <!-- Store Summary -->
+  <section class="card">
+    <h2>Store Summary</h2>
+
+    <p>Total Products: {{ totalProducts }}</p>
+    <p>Most Expensive: ${{ mostExpensive }}</p>
+    <p>Cheapest: ${{ cheapest }}</p>
+    <p>Total Value: ${{ totalValue }}</p>
+  </section>
+
+</div>
